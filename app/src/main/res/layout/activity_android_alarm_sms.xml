@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jayanth.fmk_lower.AndroidAlarmSMS">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <AbsoluteLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:id="@+id/smsnumber"
+                android:inputType="number"
+                android:hint="Enter the no to send sms"
+                android:layout_x="18dp"
+                android:layout_y="79dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Service"
+                android:id="@+id/startalarm"
+                android:layout_x="102dp"
+                android:layout_y="252dp"
+                android:clickable="true"
+                android:textColorHighlight="#5c63c1"
+                android:nestedScrollingEnabled="true"
+                android:focusableInTouchMode="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop Service"
+                android:id="@+id/cancelalarm"
+                android:layout_x="110dp"
+                android:layout_y="304dp" />
+
+            <TextView
+                android:layout_width="277dp"
+                android:layout_height="28dp"
+                android:text="Status"
+                android:gravity="center"
+                android:id="@+id/status"
+                android:layout_x="28dp"
+                android:layout_y="210dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hide"
+                android:id="@+id/hide"
+                android:layout_x="131dp"
+                android:layout_y="373dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Bhemya Software Solutions Pvt Ltd"
+                android:id="@+id/textView"
+                android:layout_x="18dp"
+                android:layout_y="451dp"
+                android:textColor="#14cae2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="FindMyKid"
+                android:textSize="50dp"
+                android:id="@+id/textView2"
+                android:layout_x="18dp"
+                android:layout_y="5dp"
+                android:textColor="#244582"
+                android:textAlignment="center"
+                android:textStyle="italic" />
+
+            <EditText
+                android:layout_width="178dp"
+                android:layout_height="59dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/time_in"
+                android:hint="Default one minute"
+                android:layout_x="40dp"
+                android:layout_y="137dp" />
+
+
+        </AbsoluteLayout>
+    </ScrollView>
+</RelativeLayout>
